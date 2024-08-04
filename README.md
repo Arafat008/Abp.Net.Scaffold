@@ -14,7 +14,7 @@ dotnet nuget add source "https://nuget.pkg.github.com/arafat008/index.json" --na
 ```
 This command will add the package source to your local machine.
 
-- **Add GitHub Package Source**
+- **Install CLI**:
 To install the CLI tool globally, execute the following command
 ```sh
 dotnet tool install -g Abp.Net.Scaffold
