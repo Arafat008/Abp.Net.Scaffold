@@ -8,12 +8,21 @@ Customizable Interface Types: Choose between different interface types (e.g., Ap
 - **User-Friendly Prompts**: Easy-to-use dropdown prompts for selecting options.
 
 ## Installation
-To install the CLI tool globally:
+- **Add GitHub Package Source**: You can use your existing personal access token (with read-only permissions for packages) to add package source. Or you can create an access token (with read-only permissions for packages). Once you have setup your access token, open a terminal and execute the following command
+```sh
+dotnet nuget add source "https://nuget.pkg.github.com/arafat008/index.json" --name "githubabpnetscaffold" --username "<your github username>" --password "<your generatedaccesstoken >" --store-password-in-clear-text
+```
+This command will add the package source to your local machine.
+
+- **Add GitHub Package Source**
+To install the CLI tool globally, execute the following command
 ```sh
 dotnet tool install -g abp.net.scaffold
 ```
 ## Usage
 After installation, you can use the CLI tool with the following command:
+- Navigate to the backend project's root folder (in most cases, it will be aspnet-core).
+- Run the following command:
 ```sh
 scaffold --f <feature-name> --e <entity-name>
 ```
