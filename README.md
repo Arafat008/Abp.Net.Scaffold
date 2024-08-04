@@ -17,7 +17,7 @@ This command will add the package source to your local machine.
 - **Add GitHub Package Source**
 To install the CLI tool globally, execute the following command
 ```sh
-dotnet tool install -g abp.net.scaffold
+dotnet tool install -g Abp.Net.Scaffold
 ```
 ## Usage
 After installation, you can use the CLI tool with the following command:
